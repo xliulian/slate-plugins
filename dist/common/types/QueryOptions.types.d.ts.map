@@ -1,0 +1,1 @@
+{"version":3,"file":"QueryOptions.types.d.ts","sourceRoot":"","sources":["../../src/common/types/QueryOptions.types.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,IAAI,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AAExC,MAAM,WAAW,YAAY;IAE3B,MAAM,CAAC,EAAE,CAAC,KAAK,EAAE,SAAS,CAAC,IAAI,CAAC,KAAK,OAAO,CAAC;IAE7C,KAAK,CAAC,EAAE,MAAM,EAAE,CAAC;IAEjB,OAAO,CAAC,EAAE,MAAM,EAAE,CAAC;CACpB"}

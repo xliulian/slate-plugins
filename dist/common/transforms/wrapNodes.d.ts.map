@@ -1,0 +1,1 @@
+{"version":3,"file":"wrapNodes.d.ts","sourceRoot":"","sources":["../../src/common/transforms/wrapNodes.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,OAAO,EAAc,MAAM,OAAO,CAAC;AACpD,OAAO,EAAE,WAAW,EAAE,MAAM,2BAA2B,CAAC;AACxD,OAAO,EAAe,kBAAkB,EAAE,MAAM,eAAe,CAAC;AAEhE;;GAEG;AACH,eAAO,MAAM,SAAS,WACZ,MAAM,WACL,OAAO,YACP,WAAW,GAAG,kBAAkB,SAK1C,CAAC"}

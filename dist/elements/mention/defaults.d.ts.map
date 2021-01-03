@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.d.ts","sourceRoot":"","sources":["../../src/elements/mention/defaults.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,gBAAgB,EAAE,0BAA0B,EAAE,MAAM,SAAS,CAAC;AAEvE,eAAO,MAAM,eAAe,YAAY,CAAC;AAEzC,eAAO,MAAM,gBAAgB,EAAE,MAAM,CACnC,gBAAgB,EAChB,0BAA0B,CAU3B,CAAC"}

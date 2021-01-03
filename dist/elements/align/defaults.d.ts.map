@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.d.ts","sourceRoot":"","sources":["../../src/elements/align/defaults.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,cAAc,EAAE,wBAAwB,EAAE,MAAM,SAAS,CAAC;AAEnE,eAAO,MAAM,kBAAkB,eAAe,CAAC;AAC/C,eAAO,MAAM,oBAAoB,iBAAiB,CAAC;AACnD,eAAO,MAAM,mBAAmB,gBAAgB,CAAC;AAEjD,eAAO,MAAM,cAAc,EAAE,MAAM,CACjC,cAAc,EACd,wBAAwB,CAsCzB,CAAC"}

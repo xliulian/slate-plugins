@@ -1,0 +1,1 @@
+{"version":3,"file":"deserializeHTMLToDocumentFragment.d.ts","sourceRoot":"","sources":["../../../src/deserializers/deserialize-html/utils/deserializeHTMLToDocumentFragment.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,6BAA6B,CAAC;AAE1D,OAAO,EAAE,qBAAqB,EAAE,MAAM,iBAAiB,CAAC;AAKxD;;GAEG;AACH,eAAO,MAAM,iCAAiC;aAInC,WAAW,EAAE;aACb,WAAW,GAAG,MAAM;2BAY9B,CAAC"}

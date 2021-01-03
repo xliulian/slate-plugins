@@ -1,0 +1,1 @@
+{"version":3,"file":"unwrapNodesByType.d.ts","sourceRoot":"","sources":["../../src/common/transforms/unwrapNodesByType.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAc,MAAM,OAAO,CAAC;AAC3C,OAAO,EAAE,WAAW,EAAE,MAAM,2BAA2B,CAAC;AAExD;;GAEG;AACH,eAAO,MAAM,iBAAiB,WACpB,MAAM,SACP,MAAM,EAAE,GAAG,MAAM,YACf,IAAI,CAAC,WAAW,EAAE,OAAO,CAAC,SAQpC,CAAC"}

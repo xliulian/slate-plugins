@@ -1,0 +1,1 @@
+{"version":3,"file":"deserializeHTMLElement.d.ts","sourceRoot":"","sources":["../../../src/deserializers/deserialize-html/utils/deserializeHTMLElement.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,WAAW,EAAE,MAAM,6BAA6B,CAAC;AAC1D,OAAO,EAAE,qBAAqB,EAAE,MAAM,UAAU,CAAC;AAGjD;;GAEG;AACH,eAAO,MAAM,sBAAsB;aAIxB,WAAW,EAAE;aACb,WAAW;MAClB,qBAEH,CAAC"}

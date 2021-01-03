@@ -1,0 +1,1 @@
+{"version":3,"file":"getRangeBefore.d.ts","sourceRoot":"","sources":["../../src/common/queries/getRangeBefore.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,QAAQ,EAAE,KAAK,EAAE,MAAM,OAAO,CAAC;AAChD,OAAO,EAAkB,kBAAkB,EAAE,MAAM,kBAAkB,CAAC;AAEtE,MAAM,WAAW,kBAAmB,SAAQ,kBAAkB;CAAG;AAEjE;;GAEG;AACH,eAAO,MAAM,cAAc,WACjB,MAAM,MACV,QAAQ,+CAEX,KAAK,GAAG,SAUV,CAAC"}

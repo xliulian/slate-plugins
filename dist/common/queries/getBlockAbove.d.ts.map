@@ -1,0 +1,1 @@
+{"version":3,"file":"getBlockAbove.d.ts","sourceRoot":"","sources":["../../src/common/queries/getBlockAbove.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,EAAE,SAAS,EAAE,MAAM,OAAO,CAAC;AACpD,OAAO,EAAE,kBAAkB,EAAE,MAAM,uBAAuB,CAAC;AAE3D;;;GAGG;AACH,eAAO,MAAM,aAAa,WAChB,MAAM,YACL,IAAI,CAAC,kBAAkB,EAAE,OAAO,CAAC,wBAKxB,CAAC"}

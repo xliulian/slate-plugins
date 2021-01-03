@@ -1,0 +1,1 @@
+{"version":3,"file":"ToolbarMark.types.d.ts","sourceRoot":"","sources":["../../src/components/ToolbarMark/ToolbarMark.types.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,kBAAkB,EAAE,MAAM,wBAAwB,CAAC;AAE5D,MAAM,WAAW,gBAAiB,SAAQ,kBAAkB;IAC1D,KAAK,CAAC,EAAE,MAAM,GAAG,MAAM,EAAE,CAAC;IAC1B,IAAI,EAAE,MAAM,CAAC;CACd"}

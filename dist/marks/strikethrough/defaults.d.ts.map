@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.d.ts","sourceRoot":"","sources":["../../src/marks/strikethrough/defaults.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,4BAA4B,EAAE,MAAM,0CAA0C,CAAC;AAExF,OAAO,EACL,sBAAsB,EACtB,gCAAgC,EACjC,MAAM,SAAS,CAAC;AAEjB,eAAO,MAAM,kBAAkB,kBAAkB,CAAC;AAElD,eAAO,MAAM,sBAAsB,EAAE,MAAM,CACzC,sBAAsB,EACtB,gCAAgC,GAAG,4BAA4B,CAWhE,CAAC"}

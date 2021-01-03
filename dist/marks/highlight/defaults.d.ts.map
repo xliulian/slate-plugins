@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.d.ts","sourceRoot":"","sources":["../../src/marks/highlight/defaults.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,4BAA4B,EAAE,MAAM,0CAA0C,CAAC;AAExF,OAAO,EAAE,kBAAkB,EAAE,4BAA4B,EAAE,MAAM,SAAS,CAAC;AAE3E,eAAO,MAAM,cAAc,cAAc,CAAC;AAE1C,eAAO,MAAM,kBAAkB,EAAE,MAAM,CACrC,kBAAkB,EAClB,4BAA4B,GAAG,4BAA4B,CAgB5D,CAAC"}

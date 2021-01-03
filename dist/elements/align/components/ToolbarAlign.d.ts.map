@@ -1,0 +1,1 @@
+{"version":3,"file":"ToolbarAlign.d.ts","sourceRoot":"","sources":["../../../src/elements/align/components/ToolbarAlign.tsx"],"names":[],"mappings":";AAKA,OAAO,EAAE,kBAAkB,EAAE,MAAM,uDAAuD,CAAC;AAQ3F,MAAM,WAAW,iBAAkB,SAAQ,kBAAkB;IAC3D,IAAI,CAAC,EAAE,MAAM,CAAC;IACd,WAAW,CAAC,EAAE,MAAM,EAAE,CAAC;CACxB;AAED,eAAO,MAAM,YAAY,oCAItB,iBAAiB,gBAanB,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"useMention.d.ts","sourceRoot":"","sources":["../../src/elements/mention/useMention.tsx"],"names":[],"mappings":"AACA,OAAO,EAAE,MAAM,EAAE,KAAK,EAAc,MAAM,OAAO,CAAC;AAIlD,OAAO,EAAE,eAAe,EAAE,iBAAiB,EAAE,MAAM,SAAS,CAAC;AAG7D,eAAO,MAAM,UAAU,kBACP,eAAe,EAAE,4CACqB,iBAAiB;;;;;8BAsD1D,MAAM;0BAjCX,GAAG,UAAU,MAAM;2BAXd,MAAM,QAAQ,eAAe;CA8EzC,CAAC"}

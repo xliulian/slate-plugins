@@ -1,0 +1,1 @@
+{"version":3,"file":"getOnHotkeyToggleNodeTypeDefault.d.ts","sourceRoot":"","sources":["../../src/common/utils/getOnHotkeyToggleNodeTypeDefault.ts"],"names":[],"mappings":"AAGA,UAAU,uCAAuC;IAC/C,GAAG,EAAE,MAAM,CAAC;IACZ,cAAc,EAAE,MAAM,CAAC,MAAM,EAAE,GAAG,CAAC,CAAC;IACpC,OAAO,CAAC,EAAE,GAAG,CAAC;CACf;AAED;;GAEG;AACH,eAAO,MAAM,gCAAgC,sCAI1C,uCAAuC,mEAIzC,CAAC"}

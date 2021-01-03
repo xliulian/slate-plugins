@@ -1,0 +1,1 @@
+{"version":3,"file":"useDropBlockOnEditor.d.ts","sourceRoot":"","sources":["../../src/dnd/hooks/useDropBlockOnEditor.ts"],"names":[],"mappings":"AAEA,OAAO,EAAE,WAAW,EAAE,MAAM,aAAa,CAAC;AAO1C,eAAO,MAAM,oBAAoB,WACvB,WAAW;cAOP,GAAG;QACT,MAAM;cACA,MAAM;iBACH,QAAQ;;;+CA8DxB,CAAC"}

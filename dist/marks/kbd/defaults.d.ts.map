@@ -1,0 +1,1 @@
+{"version":3,"file":"defaults.d.ts","sourceRoot":"","sources":["../../src/marks/kbd/defaults.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,4BAA4B,EAAE,MAAM,0CAA0C,CAAC;AAExF,OAAO,EAAE,YAAY,EAAE,sBAAsB,EAAE,MAAM,SAAS,CAAC;AAE/D,eAAO,MAAM,QAAQ,QAAQ,CAAC;AAE9B,eAAO,MAAM,YAAY,EAAE,MAAM,CAC/B,YAAY,EACZ,sBAAsB,GAAG,4BAA4B,CA0BtD,CAAC"}

@@ -1,0 +1,1 @@
+{"version":3,"file":"decoratePlugins.d.ts","sourceRoot":"","sources":["../src/utils/decoratePlugins.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,MAAM,EAAE,SAAS,EAAE,KAAK,EAAE,MAAM,OAAO,CAAC;AACjD,OAAO,EAAE,QAAQ,EAAE,WAAW,EAAE,MAAM,UAAU,CAAC;AAEjD,eAAO,MAAM,eAAe,WAClB,MAAM,WACL,WAAW,EAAE,gBACR,QAAQ,EAAE,wDAiBzB,CAAC"}

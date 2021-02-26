@@ -69,6 +69,7 @@ import {
   TablePlugin,
   TodoListPlugin,
   ToolbarAlign,
+  ToolbarCodeBlock,
   ToolbarElement,
   ToolbarImage,
   ToolbarLink,
@@ -78,6 +79,7 @@ import {
   UnderlinePlugin,
   useMention,
   withAutoformat,
+  withCodeBlock,
   withDeserializeHTML,
   withImageUpload,
   withInlineVoid,
@@ -295,6 +297,7 @@ export const Example = () => {
     withTable(options),
     withLink(),
     withList(options),
+    withCodeBlock(options),
     withDeserializeHTML({ plugins }),
     withMarks(),
     withImageUpload(),
@@ -370,9 +373,10 @@ export const Example = () => {
               type={options.blockquote.type}
               icon={<FormatQuote />}
             />
-            <ToolbarElement
+            <ToolbarCodeBlock
               type={options.code_block.type}
               icon={<CodeBlock />}
+              options={options}
             />
 
             {/* Marks */}

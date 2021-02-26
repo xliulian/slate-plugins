@@ -31,6 +31,8 @@ export const deserializeHTMLNode = (plugins: SlatePlugin[]) => (
   // blockquote
   if (nodeName === 'PRE' && node.childNodes[0]?.nodeName === 'CODE') {
     [parent] = node.childNodes;
+  } else if (nodeName === 'STYLE') {
+    return null;
   }
 
   const children: DeserializeHTMLChildren[] = Array.from(parent.childNodes)

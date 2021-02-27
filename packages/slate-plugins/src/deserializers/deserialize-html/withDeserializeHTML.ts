@@ -1,5 +1,5 @@
 import { getInlineTypes, SlatePlugin } from '@udecode/slate-plugins-core';
-import { Transforms } from 'slate';
+import { Transforms, Element } from 'slate';
 import { ReactEditor } from 'slate-react';
 import { isBlockAboveEmpty } from '../../common/queries/isBlockAboveEmpty';
 import { SlateDocumentFragment } from '../../common/types/SlateDocument.types';
@@ -64,10 +64,14 @@ export const withDeserializeHTML = ({
         element: body,
       });
 
-      fragment = preInsert(fragment);
+      // XXX: if there is any element or non-plain text, we use html parsed fragment,
+      //      else use default plain text insertData behavior since it trade newline better.
+      if (fragment.some(f => Element.isElement(f) || Object.keys(f).some(k => k !== 'text'))) {
+        fragment = preInsert(fragment);
 
-      insert(fragment);
-      return;
+        insert(fragment);
+        return;        
+      }
     }
 
     insertData(data);

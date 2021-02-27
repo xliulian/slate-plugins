@@ -20,6 +20,7 @@ export const deserializeHTMLToMarks = ({
   children,
 }: DeserializeMarksProps) => {
   let leaf = {};
+  let leafMatched = false;
 
   plugins.forEach(({ deserialize: pluginDeserializers }) => {
     if (!pluginDeserializers?.leaf) return;
@@ -30,10 +31,11 @@ export const deserializeHTMLToMarks = ({
       if (!leafPart) return;
 
       leaf = { ...leaf, ...leafPart };
+      leafMatched = true;
     });
   });
 
-  return children.reduce((arr: Descendant[], child) => {
+  const fragment = children.reduce((arr: Descendant[], child) => {
     if (!child) return arr;
 
     if (Element.isElement(child)) {
@@ -53,4 +55,16 @@ export const deserializeHTMLToMarks = ({
 
     return arr;
   }, []);
+
+  // TODO: check inline or fragment style for inline cases.
+  if (!leafMatched && element.nodeName === 'DIV' && fragment.length > 0) {
+    // no mark matched, just a normal div, we need check whether need add newline at the end.
+    const lastFragment = fragment[fragment.length - 1];
+    if (Text.isText(lastFragment)) {
+      if (lastFragment.text[lastFragment.text.length - 1] !== '\n') {
+        lastFragment.text = lastFragment.text + '\n';
+      }
+    }
+  }
+  return fragment;
 };

@@ -1,0 +1,1 @@
+{"version":3,"file":"QueryEditorOptions.d.ts","sourceRoot":"","sources":["../../../src/common/types/QueryEditorOptions.ts"],"names":[],"mappings":"AAAA;;GAEG;AACH,OAAO,EAAE,MAAM,EAAE,MAAM,OAAO,CAAC;AAE/B,MAAM,WAAW,kBAAkB;IACjC;;OAEG;IACH,MAAM,CAAC,EAAE,CAAC,MAAM,EAAE,MAAM,KAAK,OAAO,CAAC;IAErC;;OAEG;IACH,KAAK,CAAC,EAAE,OAAO,CAAC;IAEhB;;OAEG;IACH,GAAG,CAAC,EAAE,OAAO,CAAC;CACf"}

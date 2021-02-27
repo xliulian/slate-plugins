@@ -1,0 +1,1 @@
+{"version":3,"file":"withSelectOnBackspace.d.ts","sourceRoot":"","sources":["../../../../src/common/plugins/select-on-backspace/withSelectOnBackspace.ts"],"names":[],"mappings":"AAAA,OAAO,KAA6B,MAAM,OAAO,CAAC;AAElD,OAAO,EAAE,gBAAgB,EAAE,MAAM,aAAa,CAAC;AAE/C,MAAM,WAAW,4BAA6B,SAAQ,gBAAgB;CAAG;AAGzE,eAAO,MAAM,qBAAqB,UAAW,4BAA4B,6CAkCxE,CAAC"}

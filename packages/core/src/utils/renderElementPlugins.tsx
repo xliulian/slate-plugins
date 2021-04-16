@@ -1,6 +1,13 @@
 import * as React from 'react';
+import { Element } from 'slate';
 import { RenderElementProps } from 'slate-react';
 import { RenderElement, SlatePlugin } from '../types';
+
+const ElementContext = React.createContext<null|Element>(null)
+
+export const useElement = () => {
+  return React.useContext(ElementContext)
+}
 
 export const renderElementPlugins = (
   plugins: SlatePlugin[],
@@ -40,6 +47,10 @@ export const renderElementPlugins = (
 
   return (elementProps: RenderElementProps) => {
     // XXX: A wrapper tag component to make useContext get correct value inside.
-    return <Tag {...elementProps} />;
+    return (
+      <ElementContext.Provider value={elementProps.element}>
+        <Tag {...elementProps} />
+      </ElementContext.Provider>
+    );
   };
 };

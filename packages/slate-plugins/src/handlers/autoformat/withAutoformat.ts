@@ -40,12 +40,12 @@ export const withAutoformat = ({ rules }: WithAutoformatOptions) => <
         insertTrigger,
       } = rule;
 
-      if (query && !query(editor, rule)) continue;
-
       const triggers: string[] = castArray(trigger);
 
       // Check trigger
       if (!triggers.includes(text)) continue;
+
+      if (query && !query(editor, rule)) continue;
 
       const valid = () => insertTrigger && insertText(text);
 

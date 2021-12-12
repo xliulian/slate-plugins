@@ -12,5 +12,5 @@ export const wrapNodes = (
 ) => {
   unhangRange(editor, options);
 
-  Transforms.wrapNodes(editor, element, options as any);
+  return Transforms.wrapNodes(editor, element, options as any);
 };

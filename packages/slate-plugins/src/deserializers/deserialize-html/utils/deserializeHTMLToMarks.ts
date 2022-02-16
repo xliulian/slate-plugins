@@ -62,7 +62,9 @@ export const deserializeHTMLToMarks = ({
     const lastFragment = fragment[fragment.length - 1];
     if (Text.isText(lastFragment)) {
       if (lastFragment.text[lastFragment.text.length - 1] !== '\n') {
-        lastFragment.text = lastFragment.text + '\n';
+        //lastFragment.text = lastFragment.text + '\n';
+        // FIXME: exclude any span/inline cases.
+        lastFragment.endOfBlock = true
       }
     }
   }

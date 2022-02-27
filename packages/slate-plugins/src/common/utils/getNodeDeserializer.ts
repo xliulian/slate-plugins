@@ -84,6 +84,12 @@ export const getNodeDeserializer = ({
 
           if (style) {
             for (const [key, value] of Object.entries(style)) {
+              if (value === '*') {
+                if (el.style[key]) {
+                  continue
+                }
+                return
+              }
               const values = castArray<string>(value);
 
               if (!values.includes(el.style[key])) return;

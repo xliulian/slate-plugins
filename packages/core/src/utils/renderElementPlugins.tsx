@@ -48,9 +48,9 @@ export const renderElementPlugins = (
   return (elementProps: RenderElementProps) => {
     // XXX: A wrapper tag component to make useContext get correct value inside.
     return (
-      <ElementContext.Provider value={elementProps.element}>
+      //<ElementContext.Provider value={elementProps.element}>
         <Tag {...elementProps} />
-      </ElementContext.Provider>
+      //</ElementContext.Provider>
     );
   };
 };

@@ -1,4 +1,4 @@
-import { Editor, Path, Range, Transforms } from 'slate';
+import { Editor, Path, Node, Range, Transforms } from 'slate';
 import { getAbove } from '../../../common/queries/getAbove';
 import { getParent } from '../../../common/queries/getParent';
 import { isBlockTextEmptyAfterSelection } from '../../../common/queries/isBlockTextEmptyAfterSelection';
@@ -56,16 +56,32 @@ export const insertListItem = (editor: Editor, options?: ListOptions) => {
     /**
      * If not end, split nodes, wrap a list item on the new paragraph and move it to the next list item
      */
-    if (!isEnd) {
+    // if (!isEnd) {
       Editor.withoutNormalizing(editor, () => {
-        Transforms.splitNodes(editor);
+        if (!isEnd) {
+          Transforms.splitNodes(editor);
+        } else {
+          const marks = Editor.marks(editor) || {};
+          Transforms.insertNodes(
+            editor,
+            {
+              type: p.type,
+              children: [{ text: '', ...marks }],
+            },
+            { at: nextParagraphPath }
+          );
+        }
+        
         Transforms.wrapNodes(
           editor,
           {
             type: li.type,
             children: [],
           },
-          { at: nextParagraphPath }
+          {
+            at: listItemPath,
+            match: ((n: Node, p: Path) => p.length === nextParagraphPath.length && !Path.isBefore(p, nextParagraphPath)) as (node: Node) => boolean,
+          }
         );
         Transforms.moveNodes(editor, {
           at: nextParagraphPath,
@@ -76,31 +92,31 @@ export const insertListItem = (editor: Editor, options?: ListOptions) => {
           edge: 'start',
         });
       });
-    } else {
-      /**
-       * If end, insert a list item after and select it
-       */
-      const marks = Editor.marks(editor) || {};
-      Transforms.insertNodes(
-        editor,
-        {
-          type: li.type,
-          children: [{ type: p.type, children: [{ text: '', ...marks }] }],
-        },
-        { at: nextListItemPath }
-      );
-      Transforms.select(editor, nextListItemPath);
-    }
+    // } else {
+    //   /**
+    //    * If end, insert a list item after and select it
+    //    */
+    //   const marks = Editor.marks(editor) || {};
+    //   Transforms.insertNodes(
+    //     editor,
+    //     {
+    //       type: li.type,
+    //       children: [{ type: p.type, children: [{ text: '', ...marks }] }],
+    //     },
+    //     { at: nextListItemPath }
+    //   );
+    //   Transforms.select(editor, nextListItemPath);
+    // }
 
     /**
      * If there is a list in the list item, move it to the next list item
      */
-    if (listItemNode.children.length > 1) {
-      Transforms.moveNodes(editor, {
-        at: nextParagraphPath,
-        to: nextListItemPath.concat(1),
-      });
-    }
+    // if (listItemNode.children.length > 1) {
+    //   Transforms.moveNodes(editor, {
+    //     at: nextParagraphPath,
+    //     to: nextListItemPath.concat(1),
+    //   });
+    // }
 
     return true;
   }

@@ -11,13 +11,13 @@ import {
 const getClassNames = classNamesFunction<ToolbarStyleProps, ToolbarStyles>();
 
 export const ToolbarBase = React.forwardRef<HTMLDivElement, ToolbarProps>(
-  ({ className, styles, children }, ref) => {
+  ({ className, styles, children, ...props }, ref) => {
     const classNames = getClassNames(styles, {
       className,
     });
 
     return (
-      <div data-testid="Toolbar" className={classNames.root} ref={ref}>
+      <div data-testid="Toolbar" {...props} className={classNames.root} ref={ref}>
         {children}
       </div>
     );

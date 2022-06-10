@@ -12,7 +12,15 @@ export const autoformatBlock = (
     format?: (editor: Editor) => void;
   }
 ) => {
+  const selectionRef = Editor.rangeRef(editor, editor.selection!)
   Transforms.delete(editor, { at });
+  if (!selectionRef.current) {
+    // XXX: we lost selection during this delete, but current selection is before the deleted node.
+    const nextPosition = Editor.after(editor, editor.selection!.anchor)
+    Transforms.select(editor, nextPosition!)
+  } else {
+    selectionRef.unref()
+  }
 
   preFormat?.(editor);
 

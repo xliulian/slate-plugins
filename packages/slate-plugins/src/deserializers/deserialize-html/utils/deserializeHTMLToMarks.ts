@@ -57,7 +57,7 @@ export const deserializeHTMLToMarks = ({
   }, []);
 
   // TODO: check inline or fragment style for inline cases.
-  if (!leafMatched && element.nodeName === 'DIV' && fragment.length > 0) {
+  if (/*!leafMatched &&*/ element.nodeName === 'DIV' && fragment.length > 0) {
     // no mark matched, just a normal div, we need check whether need add newline at the end.
     const lastFragment = fragment[fragment.length - 1];
     if (Text.isText(lastFragment)) {

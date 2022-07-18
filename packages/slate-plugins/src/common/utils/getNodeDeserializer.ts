@@ -43,6 +43,11 @@ export interface GetNodeDeserializerOptions {
   attributes?: string[];
 
   /**
+   * List of style attributes to store with the node
+   */
+  styles?: string[];
+
+  /**
    * List of rules the element needs to follow to be deserialized to a slate node.
    */
   rules: GetNodeDeserializerRule[];
@@ -60,6 +65,7 @@ export const getNodeDeserializer = ({
   type,
   node,
   attributes,
+  styles,
   rules,
   withoutChildren,
 }: GetNodeDeserializerOptions) => {
@@ -115,6 +121,19 @@ export const getNodeDeserializer = ({
             for (const attr of attributes) {
               if (attributeNames.includes(attr))
                 htmlAttributes[attr] = el.getAttribute(attr);
+            }
+          }
+
+          if (styles) {
+            let htmlStyles
+            for (const style of styles) {
+              if (el.style[style]) {
+                htmlStyles = htmlStyles || {}
+                htmlStyles[style] = el.style[style]
+              }
+            }
+            if (htmlStyles) {
+              htmlAttributes['style'] = htmlStyles
             }
           }
 
